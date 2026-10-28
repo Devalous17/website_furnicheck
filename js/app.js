@@ -105,7 +105,7 @@
     const saved = favorites.includes(item.id);
     return `<article class="furniture-card" data-open-id="${item.id}" tabindex="0" aria-label="View ${escapeHtml(item.name)}">
       <div class="card-image-wrap">
-        <img class="card-image" src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" draggable="false">
+        <img class="card-image" src="${escapeHtml(item.thumbnail || item.image)}" alt="${escapeHtml(item.name)}" draggable="false">
         <button class="heart-button${saved ? " is-saved" : ""}" type="button" data-favorite-id="${item.id}" aria-label="${saved ? "Remove from" : "Add to"} saved furniture" aria-pressed="${saved}">
           ${icon("heart")}
         </button>

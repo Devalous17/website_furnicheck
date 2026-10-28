@@ -5,9 +5,9 @@ const FURNITURE = [
     name: "120×60 Table",
     category: "Tables",
     description: "A spacious table for gaming, working, and everything in between.",
-    width: 120,
-    length: 60,
-    height: 50,
+    width: 60,
+    length: 120,
+    height: 75,
     image: "images/table.png",
     hasAR: true
   },
@@ -16,10 +16,11 @@ const FURNITURE = [
     name: "Cabinet",
     category: "Tables",
     description: "A warm wood cabinet that brings practical storage to your room.",
-    width: 100,
-    length: 100,
-    height: 45,
-    image: "images/cabinet.png",
+    width: 65,
+    length: 110,
+    height: 85,
+    image: "images/cabinet-thumbnail.png",
+    thumbnail: "images/cabinet-thumbnail.png",
     hasAR: false
   }
 ];
